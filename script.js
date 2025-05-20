@@ -23,5 +23,10 @@ function clickButton () {
     console. log(h1Element);
     const newText = "Welcome to my home page";
 
+    h1Element.textContent = newText;
+
 }
 clickButton();
+
+const buttonElement = document.getElementById("button");
+console.log(buttonElement);
