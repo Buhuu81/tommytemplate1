@@ -1,46 +1,65 @@
-* {
-  box-sizing: border-box;
+/* GENERAL */
+img {
+  max-width: 50%;
 }
 
-body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-  color: black;
-  background-color: white;
+section {
+  min-height: 100vh;
 }
 
-nav {
+/* HEADER */
+header {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+/* MAIN */
+.sectionHero {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
-  gap: 0.5rem;
-  border-bottom: solid 1px #aaa;
-  background-color: #eee;
 }
 
-nav a {
-  display: inline-block;
-  min-width: 9rem;
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  border: solid 1px #aaa;
-  text-align: center;
-  text-decoration: none;
-  color: #555;
+.heroIntro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-nav a[aria-current='page'] {
-  color: #000;
-  background-color: #d4d4d4;
+@media (max-width: 426px) {
+  img {
+    max-width: 100%;
+  }
+
+  .heroIntro {
+    flex-direction: column;
+  }
 }
 
-main {
-  padding: 1rem;
+.sectionProjects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-h1 {
-  font-weight: bold;
-  font-size: 1.5rem;
+.projectCard {
+  border: 2px black solid;
+  width: 300px;
 }
+
+@media (max-width: 426px) {
+  .sectionProjects {
+    flex-direction: column;
+  }
+}
+
+/* FOOTER */
