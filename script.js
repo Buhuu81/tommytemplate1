@@ -13,16 +13,7 @@ console.log("Hello World!");
 // Erklærer en variabel:
 // let ? = ?
 
-const userName = "Tommy"; //String
-const UserAge = "43"
-let userPresent = true;
-console. log("mitt navn er" + userName + ". Jeg er" + UserAge + "år gammek. Og det er" userPresent + "at jeg er tilstede på Fontenehuset i dag!");
-
-
 // Regular funkction
-function helloFunction() {
-    console. log;
-}
 
 //
 //
